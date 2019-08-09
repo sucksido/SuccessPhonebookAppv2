@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styles: [`
     a {
-      color: tomato;
+      color: #FFF;
       display: inline-block;
       margin: 15px;
       font-size: 16px;

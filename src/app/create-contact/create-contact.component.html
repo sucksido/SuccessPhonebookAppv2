@@ -22,7 +22,8 @@
   <input class= "form-control" type="text" formControlName='surname' placeholder="Enter Surname"   />
   <input class= "form-control" type="text" formControlName='phone' placeholder="Enter Phone"   />
 
-  <button class= 'btn btn-info'>Add Contact</button></form>
+  <button mat-raised-button color="primary">Add Contact</button>
+</form>
 
 
   <br><br>
@@ -43,6 +44,6 @@
     </tr>
   </table>
   <table class ="table table-striped table-responsive">
-    <button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
+    <button mat-raised-button color="warn" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
   </table>
  

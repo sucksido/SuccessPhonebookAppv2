@@ -21,8 +21,8 @@
 <br><br>
 
     <input type="number" class="form-control" [(ngModel)] = 'idtoUpdate' placeholder="Enter Contact ID to update" />
-    <button class="btn btn-info" (click)= 'updateContact()'>Update Contact</button>
+    <button mat-raised-button color="primary"(click)= 'updateContact()'>Update Contact</button>
 
 <br><br>
-    <button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
+    <button mat-raised-button color="warn" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
 <router-outlet></router-outlet>

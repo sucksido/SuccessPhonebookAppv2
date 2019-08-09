@@ -23,6 +23,6 @@
 
 <input class= "form-control" type="number" [(ngModel)]='idtodelete' placeholder="Enter Id to delete Contact" />
 
-<button class= 'btn btn-info' (click)='deleteContact()'>Delete Contact </button><br/><br/>
-<button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
+<button mat-raised-button color="primary" (click)='deleteContact()'>Delete Contact </button><br/><br/>
+<button mat-raised-button color="warn" [routerLink]="['/home']" routerLinkActive="router-link-active" > Go Back</button>
 
