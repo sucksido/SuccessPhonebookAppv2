@@ -15,7 +15,15 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CreateContactComponent } from './create-contact/create-contact.component';
 import { DeleteContactComponent } from './delete-contact/delete-contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatFormFieldModule, MatTableModule, MatInputModule, MatSelectModule} from '@angular/material/';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {
+  MatFormFieldModule,
+  MatTableModule,
+  MatInputModule,
+  MatSelectModule,
+  MatButtonModule,
+  MatPaginatorModule,
+  MatSortModule} from '@angular/material/';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,12 @@ import {MatFormFieldModule, MatTableModule, MatInputModule, MatSelectModule} fro
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, InMemoryWebApiModule.forRoot(ContactData), HttpClientModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, MatFormFieldModule, MatTableModule, MatInputModule, MatSelectModule
+    MatButtonModule,
+    AppRoutingModule,
+    MatProgressSpinnerModule,
+    MatPaginatorModule,
+    MatSortModule,
+    InMemoryWebApiModule.forRoot(ContactData), HttpClientModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, MatFormFieldModule, MatTableModule, MatInputModule, MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
